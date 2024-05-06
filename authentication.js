@@ -7,14 +7,12 @@ const stripe = require('stripe')('sk_test_51PBMFWCZYaFRUYezJHsiqgp6BHarFfhZjlNkD
     description: "Team Paradise's team hoodie for the FRC Crescendo Season.",
     active: "true",
     shippable: false,
-    type: 'good',
     statement_descriptor: 'Team Paradise',
-    price_data: {
+    default_price_data: {
         currency: 'usd',
-        active: true,
-        billing_scheme: 'per_unit',
         unit_amount: 4500, 
     },
     });
+    
     console.log(product);
 })()
